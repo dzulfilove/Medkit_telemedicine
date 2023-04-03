@@ -991,8 +991,7 @@ body{
         margin-top: 3.5rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        height: auto;
+        height: 42rem;
         padding: 3rem;
         border-radius: 12px;
         background-color: var(--teal);
@@ -1024,20 +1023,27 @@ body{
         display: flex;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
     }
     .pesan {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
         
     }
 
     form {
         display: flex;
         flex-direction: column;
-        align-items: center;
         margin-top: 20px;
+        width: 400px;
       }
 
+    .label{
+        text-align: left;
+        color: var(--white);
+    }
       
     input[type="text"],
     input[type="email"],
@@ -1057,9 +1063,15 @@ body{
         gap: 1rem;
         margin-bottom: 1rem;
     }
+    .mate{
+        display: flex;
+        width: 400px;
+        height: 80px;
+    }
 
-    .cek label{
+    .mate label{
         color: var(--white);
+        width: 400px;
     }
 
     label[for="check"] {
@@ -1084,9 +1096,9 @@ body{
         font-weight: 600;
         color: var(--teal);
         transition: all 0.3s ease;
-        padding: 0.5rem 5rem;
         border: 1.5px solid var(--teal);
         border-radius: 8px;
+        padding: 10px 4rem;
         background-color: var(--white);
         cursor: pointer;
     }
