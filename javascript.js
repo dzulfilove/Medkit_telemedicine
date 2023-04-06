@@ -62,8 +62,7 @@ function isNumber(inputString) {
   }
   
  
-  function submit(event) {
-    event.preventDefault();
+  function submit() {
     const formData = handleGetFormData();
     const isFormValid = validateFormData(formData);
     const warning = document.getElementById("warning");
@@ -79,7 +78,7 @@ function isNumber(inputString) {
     }
   }
   
-  const form = document.getElementById("my-form");
-  form.addEventListener("submit", submit);
-  
-
+  document.getElementById('submit-form').addEventListener('click', function(e) {
+    e.preventDefault()
+    submit()
+  });
